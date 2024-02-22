@@ -1,0 +1,12 @@
+GET  http://localhost:8080/personaje/
+### 
+POST http://localhost:8080/personaje/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Beth Smith",
+    "img": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
+}
+
+### 

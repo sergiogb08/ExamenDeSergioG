@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  #container
+    each personaje in personajes
+      .card(style='width: 13rem')
+        img.card-img-top(src=personaje.image alt='...')
+        .card-body
+          h5
+            strong
+            = personaje.name
+          p
+            strong 
+            = personaje.gender
+          p
+            strong 
+            = personaje.created
+          a(href=`https://rickandmortyapi.com/api/character/${personaje.id}`) Descargar su ficha (JSON)
+          br
+          a(href="/") Lista completa
+           
+
